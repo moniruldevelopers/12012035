@@ -1,0 +1,5 @@
+<h1>{{ student.name }}</h1>
+  <p><strong>Email:</strong> {{ student.email }}</p>
+  <p><strong>Phone:</strong> {{ student.phone }}</p>
+  <a href="{% url 'student_update' pk=student.pk %}">Edit</a>
+  <a href="{% url 'student_delete' pk=student.pk %}">Delete</a>
